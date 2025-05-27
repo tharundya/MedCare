@@ -1,0 +1,320 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef6f9;
+}
+header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.5em;
+  position: relative;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.greeting {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+#menu-toggle {
+  display: none;
+}
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #007acc;
+  flex-direction: column;
+}
+nav a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+#menu-toggle:checked + .hamburger + .logo + nav {
+  display: flex;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav a {
+    border: none;
+    margin: 0 10px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+.hero img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.portal-heading {
+  text-align: center;
+  color: #007acc;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.hero .tagline {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+}
+.medications, .actions {
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.medications h2 {
+  text-align: center;
+  color: #007acc;
+}
+.med-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f1f9fc;
+  border-radius: 5px;
+  
+}
+.med-card.missed p {
+  color: red;
+  font-weight: bold;
+}
+
+.med-card:not(.missed) p {
+  color: green;
+  font-weight: bold;
+}
+
+.status.green {
+  color: green;
+}
+.status.red {
+  color: red;
+}
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #005fa3;
+}
+footer {
+  background-color: #007acc;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 20px;
+}
+
+.log-buttons button, .side-effects button {
+  width: auto;
+  min-width: 100px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #007acc;
+  text-align: center;
+}
+
+.reminder-form {
+  display: flex;
+  flex-direction: column;
+}
+.reminder-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.reminder-form input, .reminder-form button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.reminder-form button {
+  background-color: #007acc;
+  color: #fff;
+  margin-top: 15px;
+  border: none;
+}
+.reminder-form button:hover {
+  background-color: #005fa3;
+}
+
+.log-buttons, .side-effects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.log-buttons button, .side-effects button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.log-buttons button:hover, .side-effects button:hover {
+  background-color: #005fa3;
+}
+.patients ul {
+  list-style: none;
+  padding: 0;
+}
+.patients li {
+  background: #f1f9fc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.patients ul {
+  list-style: none;
+  padding: 0;
+}
+.patient-card {
+  display: flex;
+  align-items: center;
+  background: #f1f9fc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.patient-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.patient-details {
+  flex: 1;
+}
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.quick-actions button {
+  margin: 2px 0;
+  padding: 5px;
+  font-size: 0.9em;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.quick-actions button:hover {
+  background-color: #005fa3;
+}
+.status.good {
+  color: green;
+  font-weight: bold;
+}
+.status.at-risk {
+  color: red;
+  font-weight: bold;
+}
+/* New brand bar at top */
+.brand-bar {
+  display: flex;
+  align-items: center;    /* vertical alignment */
+  justify-content: center; /* center both logo and text */
+  background-color: #005fa3;
+  color: #fff;
+  padding: 0.5em 0;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+
+.brand-name {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Georgia', serif;
+}
+
