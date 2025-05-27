@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MedCare - Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="brand-bar">
+  <img src="D:\CQU\OneDrive - CQUniversity\2025 Term 1\Human-Computer Interation\AS 3\logo.jpg" alt="MedCare logo" class="brand-logo" />
+  <h1 class="brand-name">MedCare</h1>
+</div>
+
+
+<header>
+  <div class="user-profile">
+    <img src="D:\CQU\OneDrive - CQUniversity\2025 Term 1\Human-Computer Interation\AS 3\Margaret.jpg" alt="User profile picture" class="profile-pic" />
+    <span class="greeting">Welcome, Margaret</span>
+  </div>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reminder.html">Set Reminder</a>
+    <a href="caregiver.html">Caregiver Dashboard</a>
+    <a href="log.html">Log Dose</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="D:\CQU\OneDrive - CQUniversity\2025 Term 1\Human-Computer Interation\AS 3\Medication.jpg" />
+    <h2 class="portal-heading">Patient Portal</h2>
+    <p class="tagline">Your Health, Our Care — Together Every Step of the Way.</p>
+  </section>
+
+  <section class="medications">
+    <h2>Today’s Medications</h2>
+    <div class="med-card">
+      <p>8:00 AM - Metformin</p>
+      <span class="status green">&#10003;</span>
+    </div>
+    <div class="med-card missed">
+      <p>2:00 PM - Lisinopril</p>
+      <span class="status red">&#10007;</span>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button onclick="location.href='reminder.html'">Set Reminder</button>
+    <button onclick="location.href='log.html'">Log Symptoms</button>
+    <button onclick="location.href='caregiver.html'">Caregiver View</button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 MedCare</p>
+</footer>
+</body>
+</html>
